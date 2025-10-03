@@ -10,4 +10,32 @@
    - Code is automatically tested *every time* you push changes to GitHub.
 -->
 
+![Tree](flowchart.png)
+
 # Nerdle
+Nerdle is basicaly worlde for nerds
+
+![Static Badge](https://img.shields.io/badge/status-fire_%F0%9F%94%A5-red) ![Static Badge](https://img.shields.io/badge/python_twin_%F0%9F%A5%80-blue)
+
+
+## Requirements
+* Python 3.x
+* A keyboard
+
+## Features
+* Addition
+* Subtraction
+* Division
+* Multiplication
+* Feedback
+* Made mostly by mr flower
+
+## Examples
+
+Basic usage:
+
+```bash
+python3 nerdle.py
+```
+## License
+This project is public domain..
