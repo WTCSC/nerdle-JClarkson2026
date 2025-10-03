@@ -28,7 +28,7 @@ def generate_numbers_for_addition():
     Example: (12, 34, 46) creates "12+34=46"
     """
     numX = random.randint(20, 99)
-    num1 = randint.randint(10, numX - 10)
+    num1 = random.randint(10, numX - 10)
     num2 = numX - num1
     return (num1, num2, numX)
 
