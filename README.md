@@ -38,4 +38,4 @@ Basic usage:
 python3 nerdle.py
 ```
 ## License
-This project is public domain.
+This project is public domain..
