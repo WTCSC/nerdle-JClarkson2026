@@ -14,6 +14,9 @@ For example: 12+34=46 or 8*7=56
 # TODO: Implement the following functions #
 ###########################################
 
+import random
+import math
+
 def generate_numbers_for_addition():
     """
     Generate two numbers that when added create an 8-character equation.
@@ -24,6 +27,10 @@ def generate_numbers_for_addition():
 
     Example: (12, 34, 46) creates "12+34=46"
     """
+    numX = random.randint(20, 99)
+    num1 = random.randint(10, numX - 10)
+    num2 = numX - num1
+    return (num1, num2, numX)
 
 def generate_numbers_for_subtraction():
     """
@@ -35,6 +42,10 @@ def generate_numbers_for_subtraction():
 
     Example: (56, 23, 33) creates "56-23=33"
     """
+    numX = random.randint(10, 89)
+    num2 = random.randint(10, 99 - numX)
+    num1 = numX + num2
+    return (num1, num2, numX)
 
 def generate_numbers_for_multiplication():
     """
@@ -47,6 +58,10 @@ def generate_numbers_for_multiplication():
     
     Example: (3, 34, 102) creates "3*34=102" (8 characters)
     """
+    num2 = random.randint(15, 99)
+    num1 = random.randint(math.ceil(100/num2), 9)
+    numX = num1 * num2
+    return (num1, num2, numX)
 
 def generate_numbers_for_division():
     """
@@ -59,7 +74,9 @@ def generate_numbers_for_division():
 
     Example: (252, 36, 7) creates "252/36=7"
     """
-    
+    num1, num2, result = generate_numbers_for_multiplication()
+    return (result, num2, num1)
+
 ################################################################################
 #  DO NOT EDIT BELOW THIS LINE, THESE FUNCTIONS ARE ALREADY COMPLETED FOR YOU  #
 ################################################################################
